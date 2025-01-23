@@ -36,10 +36,11 @@ Ensure the following are installed on your system:
 npm install puppeteer
 ```
 ▶️ Usage
-1. Update the executablePath in the script if your Chrome/Chromium executable is located in a custom directory:
-```bash
-executablePath: '/usr/bin/google-chrome', // Adjust this if needed
-```
+1. > [!WARNING]  
+> Puppeteer requires the path to your Chrome executable. For Windows, update the executablePath in the script to the default Chrome location:
+> ```bash
+>executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
+> ```
 2.Run the scraper:
 ```bash
 node koctas.js
